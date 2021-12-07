@@ -29,3 +29,15 @@ namespace Palindromes
     }
   }
 }
+
+
+// Code for how Array.Reverse somewhat works
+// char[] oldArray
+// char[] newArray = new char[oldArray.length]
+// int endIndex = oldArray.length - 1
+// for (int begIndex = 0; begIndex < newArray.Length -1; begIndex++)
+// {
+//   newArray[begIndex] = oldArray[endIndex]
+//   endIndex -= 1;
+// }
+// oldArray = newArray;
