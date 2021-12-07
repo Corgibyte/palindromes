@@ -5,12 +5,19 @@ namespace Palindromes
 {
   public class PalindromeTester
   {
+
     public bool IsPalindrome(string strToTest)
     {
       string lowerCaseStr = strToTest.ToLower();
       char[] stringInChars = lowerCaseStr.ToCharArray();
       Array.Reverse(stringInChars);
       return stringInChars.SequenceEqual(lowerCaseStr.ToCharArray());
+    }
+
+    public bool IsPalindromeHard(string strToTest)
+    {
+      //TODO: Implement
+      return false;
     }
   }
 }
