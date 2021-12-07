@@ -1,11 +1,16 @@
+using System;
+using System.Linq;
+
 namespace Palindromes
 {
   public class PalindromeTester
   {
     public bool IsPalindrome(string strToTest)
     {
-      //TODO: Implement method
-      return false;
+      string lowerCaseStr = strToTest.ToLower();
+      char[] stringInChars = lowerCaseStr.ToCharArray();
+      Array.Reverse(stringInChars);
+      return stringInChars.SequenceEqual(lowerCaseStr.ToCharArray());
     }
   }
 }
